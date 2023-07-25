@@ -51,10 +51,9 @@
 							<li class="slide-df-textbf">Evaluación</li>
 							<ul>
 								<li>Evaluación funcional</li>
-								<li>Complejidad del protocolo</li>
 							</ul>
 							<li class="slide-df-textbf">Conclusiones</li>
-							<li class="slide-df-textbf">¿Preguntas? &#x1F412;</li>
+							<li class="slide-df-textbf">¿Preguntas? &#x1F422;</li>
 						</ol>
 					</div>
 				</div>
@@ -65,14 +64,26 @@
 			</section>
 			<section>
 				<div class="slide-df">
-					<h3 class="slide-df-title">El Internet de las Cosas</h3>
+					<h3 class="slide-df-title">El Internet de las Cosas (IoT)</h3>
 					<div class="slide-df-content">
-						<img src="img/iot1.png" width="300px" />
+						<img src="img/iot1.png" width="500px" style="position: absolute; top: 10%; left: -2%;"
+							class="fragment fade-in" />
+						<img src="img/iot2.png" width="400px" style="position: absolute; top: 5%; left: 25%;"
+							class="fragment fade-in" />
+						<img src="img/iot3.jpg" width="800px" style="position: absolute; top: 10%; left: 55%;"
+							class="fragment fade-in" />
+						<img src="img/iot4.jpeg" width="800px" style="position: absolute; top: 45%; left: 10%;"
+							class="fragment fade-in" />
 					</div>
 				</div>
 			</section>
 			<section>
-				<img src="img/fig_iot.svg" />
+				<div class="slide-df">
+					<h3 class="slide-df-title">Una necesidad...</h3>
+					<div class="slide-df-content">
+						<img src="img/fig_iot.svg" style="   position: absolute; left: 25%;" />
+					</div>
+				</div>
 			</section>
 			<section>
 				<div class="slide-df">
@@ -83,7 +94,259 @@
 					</div>
 				</div>
 			</section>
-			<section>Slide 4</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">¿Es solo humo?</h3>
+					<div class="slide-df-content">
+						<img src="img/hexa-x_logo_color_large.png" width="200px"
+							style="position: absolute; top: 7%; left: 10%;" class="fragment fade-in" />
+						<img src="img/6g-flagship-logo-1-1024x1024.png" width="300px"
+							style="position: absolute; top: 7%; left: 40%;" class="fragment fade-in" />
+						<img src="img/photo_2023-06-19_13-43-27.jpg" width="600px"
+							style="position: absolute; top: 10%; left: 60%;" class="fragment fade-in" />
+						<img src="img/photo_2023-06-19_13-43-35.jpg" width="500px"
+							style="position: absolute; top: 27%; left: 15%;" class="fragment fade-in" />
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">Red de comuniación 6G</h3>
+					<div class="slide-df-content" style="padding-top: 100px !important;">
+						<img src="img/6g_1.png" width="65%" style="position: absolute; top: 10%; left: 15%;" />
+						<img src="img/6g_2.jpg" width="500px" style="position: absolute; top: 45%; left: 55%;"
+							class="fragment grow" />
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">Redes definidas por Software (SDN)</h3>
+
+					<div class="slide-df-content">
+						<img src="img/sdn.jpg" width="40%" style="   position: absolute; top: 25%;left: 5%;"
+							class="fragment fade-in" />
+						<img src="img/sdn_arch.png" width="55%" style="position: absolute; top: 12%; left: 45%;"
+							class="fragment fade-in" />
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">Paradigmas de control en redes SDN</h3>
+
+					<div class="slide-df-content">
+						<img src="img/InBandOutBandScheme.svg" width="55%"
+							style="   position: absolute; top: 15%;left: 25%;" />
+					</div>
+				</div>
+			</section>
+			<section>
+				<h1>Objetivos</h1>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">Objetivos y motivación</h3>
+					El objetivo principal es conseguir el desarrollo de un <b>protocolo de control in-band</b> para
+					la integración de la tecnología IoT en las futuras de redes de 6G.
+					<div class="slide-df-content">
+						<img src="img/motivacion.drawio.svg" width="70%"
+							style="   position: absolute; top: 25%;left: 25%;" />
+					</div>
+				</div>
+			</section>
+			<section>
+				<h1>Análisis y diseño</h1>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">Protocolo In-Band</h3>
+
+					<div class="slide-df-content">
+						<p>Después de una evaluación de las opciones disponibles, se ha decidido utilizar
+							el protocolo <b>IoTorii</b>, basado en el enfoque de enrutamiento jerárquico. La jerarquía
+							se define mediante etiquetas denominadas, HLMAC.</p>
+						<p style="padding-top: 2%;">El protocolo es bastante ligero, solo tiene
+							<b>dos</b> mensajes:
+						</p>
+
+						<ul style="padding-left: 2%;">
+							<li><em>Hello</em></li>
+							<li><em>SetHLMAC</em></li>
+						</ul>
+						<img src="img/iotorii-operation.svg" width="50%"
+							style="   position: absolute; top: 25%;left: 45%;">
+					</div>
+				</div>
+			</section>
+			<section>
+				<section>
+					<div class="slide-df">
+						<h3 class="slide-df-title">Entorno de desarrollo y validación</h3>
+
+						<div class="slide-df-content">
+							<p>Se requiere una instancia que porte el <b>Kernel de Linux</b>, dado que serán necesarias
+								las
+								Network
+								Namespaces, y el modulo de emulación del enttorno radio mac80211_hwsim.</p>
+							<img src="img/Captura desde 2023-07-25 17-29-00.png" width="80%"
+								style="   position: absolute; top: 35%;left: 10%;">
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="slide-df">
+						<h3 class="slide-df-title">Agente SDN</h3>
+
+						<div class="slide-df-content">
+
+							<img src="img/Captura desde 2023-07-25 17-38-55.png" width="85%"
+								style="   position: absolute; top: 35%;left: 10%;">
+
+							<p>Se ha elegido BOFUSS como software switch SDN, dado que para nuestro proyecto es la
+								opción más adecuada por haber una implementación preliminar de in-band basada en parte
+								en IoTorii.</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="slide-df">
+						<h3 class="slide-df-title">Agente de control SDN</h3>
+
+						<div class="slide-df-content">
+
+							<img src="img/Captura desde 2023-07-25 17-42-08.png" width="85%"
+								style="   position: absolute; top: 35%;left: 10%;">
+
+							<p>Finalmente se ha elegido Ryu como controlador SDN, dado que para nuestro
+								proyecto es la opción que conlleva menos tiempo de desarrollo para una prueba de
+								concepto
+								y que, además, una vez probado el concepto en Ryu, técnicamente es sencillo de extender
+								a
+								la plataforma ONOS. Es decir, no son excluyentes, porque al final se utiliza como agente
+								de
+								control y ambos basados en OpenFlow.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section>
+				<h1>Desarrollo</h1>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">Un poco de historia... &#x1F914;</h3>
+					<div class="slide-df-content">
+						<ul id="historiaBF" style="padding: 2%;">
+							<li>Este switch nació como una primera implementación por
+								el 2008 en la universidad de Stanford, acuñado como <em>The Stanford Reference OpenFlow
+									Switch</em>. Esta implementación era un mínimo producto viable para demostrar y
+								ayudar en el
+								proceso de estandarización del protocolo <b>OpenFlow 1.0</b>.</li>
+							<li>Dicho mínimo producto viable, fue retomado por los laboratorios de Ericsson,
+								<em>Ericsson
+									Research TraﬀicLab</em>, para desarrollar la versión <b>OpenFlow 1.1</b>
+							</li>
+							<li>Fue retomado por el investigador Eder Leão Fernandes, desde el <em>CPqD</em> de Brasil,
+								e hizo lo que hoy conocemos como el BOFUSS, el cual da soporte para la versión
+								<b>OpenFlow
+									1.3</b>.
+							</li>
+							<li>Por último, fue tomado por Boby Nicusor Constantin
+								y modificado para hacer una implementación de control In-band, creando el
+								<b>in-BOFUSS</b>. Implementaban Amaru.
+							</li>
+						</ul>
+						<img src="img/a.drawio.svg" width="80%" style="   position: absolute; top: 72%;left: 10%;" />
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">Control in-band en el BOFUSS</h3>
+					<div class="slide-df-content">
+						<p style="padding-right: 50%;">Amaru es un protocolo que habilita el control in-band en en-
+							tornos SDN <b>cableados</b>. La diferencia con IoTorii radica en los identificadores
+							utilizados. En el caso de Amaru,
+							se emplean las AMACs asociadas por puerto del switch, mientras que en IoTorii se utilizan
+							HLMACs asociadas mediante una relación de vecindad entre nodos en rango de cobertura.</p>
+						<ul id="historiaBF" style="padding-right: 60%;">
+							<li>Se han detectado todas las modificaciones</li>
+							<li>Se han clasificado en: </li>
+							<ul>
+								<li>Modificaciones del puerto local del ofprotocol</li>
+								<li>Implementación de la lógica de control
+									del modo in-band</li>
+								<li>Implementación del protocolo Amaru.</li>
+							</ul>
+						</ul>
+						<img src="img/Diagrama sin título.drawio.svg" width="60%"
+							style="   position: absolute; top: -1%;left: 55%;" />
+					</div>
+				</div>
+			</section>
+			<section>
+				<section>
+					<div class="slide-df">
+						<h3 class="slide-df-title">Control in-band en el BOFUSS</h3>
+						<div class="slide-df-content">
+							<img src="img/WIN-BOFUSS.drawio_1.svg" width="50%"
+								style="   position: absolute; top: 25%;left: 25%;">
+						</div>
+					</div>
+				</section>
+				<section><img src=" img/WIN-BOFUSS.drawio.svg">
+				</section>
+			</section>
+			<section>
+				<h1>Evaluación</h1>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">Evaluación funcional</h3>
+					<div class="slide-df-content">
+
+						<img src="img/scenario_eva.svg" width="70%"
+							style="   position: absolute; top: 10%;left: 15%;" />
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">Topología de la evaluación funcional</h3>
+					<div class="slide-df-content">
+
+						<img src="img/topo_eva.svg" width="300px" style="   position: absolute; top: 15%;left: 20%;" />
+						<img src="img/topo_val_mininetWifi.png" width="600px"
+							style=" position: absolute; top: 15%;left: 50%;" />
+					</div>
+				</div>
+			</section>
+			<section>
+				<section>
+					<div class="slide-df">
+						<h3 class="slide-df-title">Mensajes <em>Hello</em></h3>
+						<div class="slide-df-content">
+
+							<img src="img/topo_hellos.svg" width="350px"
+								style="   position: absolute; top: 10%;left: 45%;" />
+
+						</div>
+					</div>
+				</section>
+				<section><img src="img/topo_hello_nodoB_nb.svg" width="70%" /></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+			</section>
+			<section>
+				<h1>Conclusiones</h1>
+			</section>
+			<section>
+				<h1>¿Preguntas? &#x1F422;</h1>
+			</section>
 		</div>
 	</div>
 	<footer class="ft">

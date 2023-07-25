@@ -88,6 +88,7 @@
     text-align: left;
     padding-left: 10%;
     padding-bottom: 7%;
+    height: 900px;
 }
 
 .slide-df-content {
@@ -100,4 +101,8 @@
 
 .slide-df-textbf {
     font-weight: bold;
+}
+
+#historiaBF li {
+    padding-top: 2%;
 }
