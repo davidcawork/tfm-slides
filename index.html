@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>tfm-slides</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css">
+
+	<!-- Ponemos el favico  de la uah -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<!-- Añadimos nuestra shieet -->
+	<link rel="stylesheet" href="dist/tfm.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1 class="tfm-h1">Diseño e implementación de protocolo de control escalable en redes IoT para entornos
+					6G</h1>
+				<h3 class="tfm-h2">David Carrascal</h3>
+				<h4 class="tfm-h3">27 de julio del 2023
+				</h4>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h2 class="slide-df-title">Índice</h2>
+					<div class="slide-df-content">
+						<ol>
+							<li class="slide-df-textbf">Introducción</li>
+							<ul>
+								<li>El Internet de las Cosas y la red 6G</li>
+								<li>Redes SDN y paradigmas de control</li>
+							</ul>
+							<li class="slide-df-textbf">Objetivos</li>
+							<li class="slide-df-textbf">Análisis y diseño</li>
+							<ul>
+								<li>Protocolo In-band</li>
+								<li>Plataforma de desarrollo y validación</li>
+							</ul>
+							<li class="slide-df-textbf">Desarrollo</li>
+							<li class="slide-df-textbf">Evaluación</li>
+							<ul>
+								<li>Evaluación funcional</li>
+								<li>Complejidad del protocolo</li>
+							</ul>
+							<li class="slide-df-textbf">Conclusiones</li>
+							<li class="slide-df-textbf">¿Preguntas? &#x1F412;</li>
+						</ol>
+					</div>
+				</div>
+
+			</section>
+			<section>
+				<h1>Introducción</h1>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">El Internet de las Cosas</h3>
+					<div class="slide-df-content">
+						<img src="img/iot1.png" width="300px" />
+					</div>
+				</div>
+			</section>
+			<section>
+				<img src="img/fig_iot.svg" />
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">¿Solución?</h3>
+					<span>Hay que ponerse a trabajar en la proxima generación de redes móviles, 6G</span>
+					<div class="slide-df-content">
+						<img src="img/banner-screen-1.png" width="100%" />
+					</div>
+				</div>
+			</section>
+			<section>Slide 4</section>
+		</div>
+	</div>
+	<footer class="ft">
+		<div class="ft-drch"><img class="ft-img" src="img/01_logo-vA_293-fondoTransp.png"></div>
+		<div class="ft-izq">
+			<span class="ft-span" id="tfm-text">Trabajo Fin de Máster</span>
+			<span class="ft-span">Departamento de Automática</span>
+		</div>
+	</footer>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			slideNumber: slide => {
+				return [Reveal.getIndices(slide).h + 1, '/', Reveal.getHorizontalSlides().length]
+			},
+			controlsBackArrows: 'faded',
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+
+		var resizeSlide = function () {
+			Reveal.configure({
+				width: window.innerWidth,
+				height: window.innerHeight
+			});
+		}
+
+		setInterval(resizeSlide, 1000);
+	</script>
+</body>
+
+</html>

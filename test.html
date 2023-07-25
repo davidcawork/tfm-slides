@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            /* Asegura que el contenido cubra al menos el 100% de la altura del viewport */
+            position: relative;
+            /* Asegura que el footer se posicione correctamente en relación con el body */
+        }
+
+        .container {
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 60px;
+            /* Altura del footer más un pequeño espacio adicional */
+        }
+
+
+        /* Estilos básicos para el footer */
+        footer {
+            background-color: rgb(0, 70, 173);
+            color: white;
+            padding: 20px;
+            text-align: left;
+            position: absolute;
+            /* Posiciona el footer en la parte inferior de la página */
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            /* Asegura que el footer ocupe todo el ancho de la página */
+        }
+
+        /* Estilo para la imagen dentro del footer */
+        footer img {
+            max-width: 100px;
+            /* Ajusta el ancho máximo de la imagen a tu preferencia */
+            vertical-align: middle;
+            /* Alinea verticalmente la imagen con el contenido del footer */
+            margin-right: 10px;
+            /* Margen derecho para separar la imagen del texto */
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <h2>Fixed/Sticky Footer Example</h2>
+        <p>The footer is placed at the bottom of the page.</p>
+    </div>
+
+    <footer>
+        <img src="img/01_logo-vA_293-fondoTransp.png" alt="Logo">
+        <span>© 2023 Todos los derechos reservados</span>
+    </footer>
+</body>
+
+</html>

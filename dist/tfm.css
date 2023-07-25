@@ -1,0 +1,103 @@
+.ft {
+    background-color: rgb(0, 70, 173);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    position: absolute;
+    z-index: 9;
+    /* Posiciona el footer en la parte inferior de la página */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* Asegura que el footer ocupe todo el ancho de la página */
+}
+
+.ft-drch {
+    width: 50%;
+    float: left;
+}
+
+.ft-izq {
+    width: 49%;
+    float: right;
+    border-left: 1px solid white;
+    padding-left: 10px;
+}
+
+.ft-span {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-family: Source Sans Pro,
+        Helvetica,
+        sans-serif;
+}
+
+#tfm-text {
+    padding-bottom: 10px;
+}
+
+.ft-img {
+    max-width: 150px;
+    /* Ajusta el ancho máximo de la imagen a tu preferencia */
+    vertical-align: middle;
+    /* Alinea verticalmente la imagen con el contenido del footer */
+    padding-left: 50px;
+}
+
+/* Vamos a meterle la zarpa al theme de white css */
+.reveal .controls {
+    top: 70px;
+    right: 12px;
+    bottom: auto;
+    font-size: 6px;
+}
+
+.reveal .progress {
+    color: rgb(66, 123, 207);
+}
+
+/*  Portada */
+.tfm-h1 {
+    padding-left: 50px;
+    text-align: left;
+    font-size: 65px;
+    text-transform: none;
+    padding-bottom: 100px;
+}
+
+.tfm-h2 {
+    padding-left: 50px;
+    text-align: left;
+    font-size: 20px;
+    text-transform: none;
+}
+
+.tfm-h3 {
+    padding-left: 50px;
+    text-align: left;
+    font-size: 15px;
+    text-transform: none;
+}
+
+/*  Contenido */
+.slide-df {
+    text-align: left;
+    padding-left: 10%;
+    padding-bottom: 7%;
+}
+
+.slide-df-content {
+    font-size: 35px;
+}
+
+.slide-df-title {
+    margin-bottom: 75px !important;
+}
+
+.slide-df-textbf {
+    font-weight: bold;
+}
