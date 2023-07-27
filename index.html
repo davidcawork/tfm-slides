@@ -88,7 +88,7 @@
 			<section>
 				<div class="slide-df">
 					<h3 class="slide-df-title">¿Solución?</h3>
-					<span>Hay que ponerse a trabajar en la proxima generación de redes móviles, 6G</span>
+					<span>La proxima generación de redes móviles, el 6G</span>
 					<div class="slide-df-content">
 						<img src="img/banner-screen-1.png" width="100%" />
 					</div>
@@ -156,6 +156,15 @@
 				</div>
 			</section>
 			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">Objetivos y motivación</h3>
+					<div class="slide-df-content">
+						<img src="img/obj.png" width="70%" style="   position: absolute; top: 10%;left: 15%;" />
+
+					</div>
+				</div>
+			</section>
+			<section>
 				<h1>Análisis y diseño</h1>
 			</section>
 			<section>
@@ -188,7 +197,7 @@
 							<p>Se requiere una instancia que porte el <b>Kernel de Linux</b>, dado que serán necesarias
 								las
 								Network
-								Namespaces, y el modulo de emulación del enttorno radio mac80211_hwsim.</p>
+								Namespaces, y el modulo de emulación del entorno radio mac80211_hwsim.</p>
 							<img src="img/Captura desde 2023-07-25 17-29-00.png" width="80%"
 								style="   position: absolute; top: 35%;left: 10%;">
 						</div>
@@ -262,28 +271,52 @@
 				</div>
 			</section>
 			<section>
-				<div class="slide-df">
-					<h3 class="slide-df-title">Control in-band en el BOFUSS</h3>
-					<div class="slide-df-content">
-						<p style="padding-right: 50%;">Amaru es un protocolo que habilita el control in-band en en-
-							tornos SDN <b>cableados</b>. La diferencia con IoTorii radica en los identificadores
-							utilizados. En el caso de Amaru,
-							se emplean las AMACs asociadas por puerto del switch, mientras que en IoTorii se utilizan
-							HLMACs asociadas mediante una relación de vecindad entre nodos en rango de cobertura.</p>
-						<ul id="historiaBF" style="padding-right: 60%;">
-							<li>Se han detectado todas las modificaciones</li>
-							<li>Se han clasificado en: </li>
-							<ul>
-								<li>Modificaciones del puerto local del ofprotocol</li>
-								<li>Implementación de la lógica de control
-									del modo in-band</li>
-								<li>Implementación del protocolo Amaru.</li>
+				<section>
+					<div class="slide-df">
+						<h3 class="slide-df-title">Control in-band en el BOFUSS</h3>
+						<div class="slide-df-content">
+							<p style="padding-right: 50%;">Amaru es un protocolo que habilita el control in-band en en-
+								tornos SDN <b>cableados</b>. La diferencia con IoTorii radica en los identificadores
+								utilizados. En el caso de Amaru,
+								se emplean las AMACs asociadas por puerto del switch, mientras que en IoTorii se
+								utilizan
+								HLMACs asociadas mediante una relación de vecindad entre nodos en rango de cobertura.
+							</p>
+							<ul id="historiaBF" style="padding-right: 60%;">
+								<li>Se han detectado todas las modificaciones</li>
+								<li>Se han clasificado en: </li>
+								<ul>
+									<li>Modificaciones del puerto local del ofprotocol</li>
+									<li>Implementación de la lógica de control
+										del modo in-band</li>
+									<li>Implementación del protocolo Amaru.</li>
+								</ul>
 							</ul>
-						</ul>
-						<img src="img/Diagrama sin título.drawio.svg" width="60%"
-							style="   position: absolute; top: -1%;left: 55%;" />
+							<img src="img/Diagrama sin título.drawio.svg" width="60%"
+								style="   position: absolute; top: -1%;left: 55%;" />
+						</div>
 					</div>
-				</div>
+				</section>
+				<section>
+					<div class="slide-df">
+						<h3 class="slide-df-title">Herramienta dpctl</em></h3>
+						<div class="slide-df-content">
+
+							<img src="img/dpctl_3.png" width="60%" style="   position: absolute; top: 10%;left: 25%;" />
+
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="slide-df">
+						<h3 class="slide-df-title">Herramienta dpctl</em></h3>
+						<div class="slide-df-content">
+
+							<img src="img/dpctl_4.png" width="60%" style="   position: absolute; top: 10%;left: 25%;" />
+
+						</div>
+					</div>
+				</section>
 			</section>
 			<section>
 				<section>
@@ -301,7 +334,9 @@
 			<section>
 				<h1>Evaluación</h1>
 			</section>
+
 			<section>
+
 				<div class="slide-df">
 					<h3 class="slide-df-title">Evaluación funcional</h3>
 					<div class="slide-df-content">
@@ -310,6 +345,8 @@
 							style="   position: absolute; top: 10%;left: 15%;" />
 					</div>
 				</div>
+
+
 			</section>
 			<section>
 				<div class="slide-df">
@@ -328,21 +365,93 @@
 						<h3 class="slide-df-title">Mensajes <em>Hello</em></h3>
 						<div class="slide-df-content">
 
-							<img src="img/topo_hellos.svg" width="350px"
-								style="   position: absolute; top: 10%;left: 45%;" />
+							<img src="img/topo_hello.svg" width="60%"
+								style="   position: absolute; top: 10%;left: 25%;" />
 
 						</div>
 					</div>
 				</section>
+				<section><img src="img/topo_hello_nodoA_nb.svg" width="70%" /></section>
 				<section><img src="img/topo_hello_nodoB_nb.svg" width="70%" /></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
-				<section></section>
+				<section><img src="img/topo_hello_nodoC_nb.svg" width="70%" /></section>
+				<section><img src="img/topo_hello_nodoD_nb.svg" width="70%" /></section>
+				<section><img src="img/topo_hello_nodoE_nb.svg" width="70%" /></section>
+				<section><img src="img/topo_hello_nodoF_nb.svg" width="70%" /></section>
+				<section><img src="img/nb_real.png" width="90%" /></section>
 			</section>
 			<section>
+				<section>
+					<div class="slide-df">
+						<h3 class="slide-df-title">Mensajes <em>SetHLMAC</em></h3>
+						<div class="slide-df-content">
+
+							<img src="img/topo_sethlmac_1.svg" width="60%"
+								style="   position: absolute; top: 10%;left: 25%;" />
+
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="slide-df">
+						<h3 class="slide-df-title">Mensajes <em>SetHLMAC</em></h3>
+						<div class="slide-df-content">
+
+							<img src="img/topo_sethlmac_2.svg" width="60%"
+								style="   position: absolute; top: 10%;left: 25%;" />
+
+						</div>
+					</div>
+				</section>
+
+				<section><img src="img/hlmac_real.png" width="90%" /></section>
+			</section>
+
+			<section>
+				<section>
+					<div class="slide-df">
+						<h3 class="slide-df-title">Topología lógica</h3>
+						<div class="slide-df-content">
+
+							<img src="img/topo_logic.svg" width="60%"
+								style="   position: absolute; top: 10%;left: 25%;" />
+
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="slide-df">
+						<h3 class="slide-df-title">Topología lógica corriendo</em></h3>
+						<div class="slide-df-content">
+
+							<img src="img/inband1.png" width="60%" style="   position: absolute; top: 10%;left: 25%;" />
+
+						</div>
+					</div>
+				</section>
+
+			</section>
+
+			<section><img src="img/rpi.png" /></section>
+			<section>
 				<h1>Conclusiones</h1>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">Conclusiones</h3>
+					<div class="slide-df-content">
+						<img src="img/obj2.png" width="70%" style="   position: absolute; top: 10%;left: 15%;" />
+
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="slide-df">
+					<h3 class="slide-df-title">Trabajo a futuro</h3>
+					<div class="slide-df-content">
+						<img src="img/fut.png" width="70%" style="   position: absolute; top: 10%;left: 15%;" />
+
+					</div>
+				</div>
 			</section>
 			<section>
 				<h1>¿Preguntas? &#x1F422;</h1>
